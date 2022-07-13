@@ -217,7 +217,7 @@ else:
     eval_path = os.path.join(result_path, "eval")
     if not os.path.exists(eval_path):
         os.makedirs(eval_path)
-    result_file = SEP.join([args.model, "%s.pkl" % exp_name])
+    result_file = SEP.join(["%s.pkl" % exp_name])
     result_file = os.path.join(eval_path, result_file)
     result = {
         "valid": [valid_metric_value_dict], "test": [test_metric_value_dict]}
